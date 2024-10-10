@@ -1,27 +1,81 @@
-#container {
-  text-align: center;
+/* Home Page Styles */
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+ion-header {
+  background-color: #bd2f5e;
+  /* Dark background for header */
+  color: #ffffff;
+  /* White text color for header */
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+ion-toolbar {
+  --background: transparent;
+  /* Make toolbar background transparent */
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+ion-card {
+  background-color: #1c1c1e;
+  /* Dark background color for card */
+  color: #ffffff;
+  /* White text for better contrast */
+  border-radius: 12px;
+  /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  /* Subtle shadow for depth */
+  padding: 16px;
+  /* Padding for inner content */
+  margin: 16px;
+  /* Margin around the card */
 }
 
-#container a {
-  text-decoration: none;
+ion-item {
+  --background: transparent;
+  /* Transparent background for items */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  /* Subtle bottom border */
+}
+
+h1 {
+  font-size: 28px;
+  /* Larger font size for city name */
+  margin: 10px 0;
+  /* Margin for spacing */
+}
+
+p {
+  margin: 4px 0;
+  /* Margin for spacing between paragraphs */
+}
+
+span {
+  font-size: 48px;
+  /* Large font size for temperature value */
+  font-weight: bold;
+  /* Bold font for emphasis */
+  margin-right: 10px;
+  /* Space between temperature and icon */
+}
+
+img {
+  width: 64px;
+  /* Fixed width for weather icon */
+  height: 64px;
+  /* Fixed height for weather icon */
+}
+
+ion-button {
+  background-color: #007aff;
+  /* Sesuaikan warna tombol */
+  color: white;
+  /* Warna teks tombol */
+  margin: 16px;
+  /* Margin sekitar tombol */
+  border-radius: 8px;
+  /* Sudut membulat tombol */
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Bayangan tombol */
+}
+
+ion-button:hover {
+  background-color: #0056b3;
+  /* Warna lebih gelap saat hover */
 }

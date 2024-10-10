@@ -1,0 +1,103 @@
+/* Search Page Styles */
+
+ion-header {
+    background-color: #bd2f5e;
+    /* Dark background for header */
+    color: #ffffff;
+    /* White text color for header */
+}
+
+ion-toolbar {
+    --background: transparent;
+    /* Make toolbar background transparent */
+}
+
+ion-content {
+    background-color: #1c1c1e;
+    /* Dark background for content */
+    color: #ffffff;
+    /* White text for better contrast */
+    padding: 16px;
+    /* Padding around the content */
+}
+
+ion-item {
+    --background: transparent;
+    /* Transparent background for items */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    /* Subtle bottom border */
+    margin-bottom: 16px;
+    /* Space between items */
+}
+
+ion-card {
+    background-color: #1c1c1e;
+    /* Dark background color for card */
+    color: #ffffff;
+    /* White text for better contrast */
+    border-radius: 12px;
+    /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    /* Subtle shadow for depth */
+    padding: 16px;
+    /* Padding for inner content */
+    margin-top: 16px;
+    /* Margin for spacing above the card */
+}
+
+h1 {
+    font-size: 28px;
+    /* Larger font size for city name */
+    margin: 10px 0;
+    /* Margin for spacing */
+}
+
+p {
+    margin: 4px 0;
+    /* Margin for spacing between paragraphs */
+}
+
+span {
+    font-size: 48px;
+    /* Large font size for temperature value */
+    font-weight: bold;
+    /* Bold font for emphasis */
+    margin-right: 10px;
+    /* Space between temperature and icon */
+}
+
+img {
+    width: 64px;
+    /* Fixed width for weather icon */
+    height: 64px;
+    /* Fixed height for weather icon */
+}
+
+ion-input {
+    background-color: #2c2c2e;
+    /* Dark background for input */
+    color: #ffffff;
+    /* White text for input */
+    border-radius: 8px;
+    /* Rounded corners for input */
+    margin-right: 8px;
+    /* Space between input and button */
+}
+
+ion-button {
+    background-color: #007aff;
+    /* Blue button color */
+    color: white;
+    /* White text for button */
+    margin: 16px;
+    /* Margin around the button */
+    border-radius: 8px;
+    /* Rounded corners for button */
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow for button */
+}
+
+ion-button:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}

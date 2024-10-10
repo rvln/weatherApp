@@ -1,20 +1,36 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Weather App
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card>
+    <ion-item>
+      <p>Today's Report</p>
+      <ion-label>
+        {{todayDate | date: "EEE dd MMM"}}
+      </ion-label>
+    </ion-item>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <ion-item lines="none">
+      <span>
+        {{(weatherTemp?.temp - 273.15).toFixed(0)}}
+      </span>
+      <img [src]="weatherIcon">
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        <h1>{{ cityName }}</h1>
+        <div *ngIf="weatherTemp">
+          <p>Temperature: {{ weatherTemp.temp - 273.15 | number: '1.0-0' }}°C</p>
+          <p>Condition: {{ weatherTemp.weather[0]?.description }}</p>
+        </div>
+      </ion-label>
+    </ion-item>
+  </ion-card>
+  <ion-button routerLink="/search">Search for Another City</ion-button>
 </ion-content>
